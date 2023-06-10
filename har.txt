@@ -1,0 +1,37 @@
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+$session.Cookies.Add((New-Object System.Net.Cookie("GuestData", "UserID=-2054668774", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("_gcl_au", "1.1.575602735.1682654088", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("RBXcb", "RBXViralAcquisition=true&RBXSource=true&GoogleAnalytics=true", "/", "www.roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("__utmz", "200924205.1682654122.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie(".ROBLOSECURITY", "_|WARNING:-DO-NOT-SHARE-THIS.--Sharing-this-will-allow-someone-to-log-in-as-you-and-to-steal-your-ROBUX-and-items.|_E40FB75911EA9ABF8B0FD5B357519FDE2C8C80EF0645F4C33000EAB542933B045002A032C63930452E868FF41EC8D225081AA33E2A369718D35EE4A9BE78B5905EDF817AE433828D05D2B7F0D942CA87E4FAEE4740D42438C38D6D0AC2C4EC39763EB3D0BFE8B18F8B74BF73B0264B7F3C5FB00E3A3062DFB7A2B8A7FFAE2771F3EDEFF196C892CDCC100ED24F6AEA33A91698AB2FB2899E52F0897CDAE617D0E251A06E9AE43B7099D424A86FC97A5334A9C366A3F097AFC8504650DD4247C6261A748B472620992BCBD766EE886F8EB7E6B028E3CCFB7D56AD276D5B3BB99AE8A4FDE073DF22360B8E6D587F855BB7B060E91E86967A4AAA1952932F969CDF72CD54880063F1EF8B6E426365452083E762B0145280FE542CEE1D32F2EBA0454FD08D4A18188D6452705566401E455D75B73E7556DEEE34AD67EF2275D67189D6906F9EAC4A52265C146C9EAF14A002E83E6AD14FD8F40A0DDB188B30AC8E98F9A312074FE22A3B18AE1B3B0BEEBCEE6D7AC62F2305BEC6820825F4C0C0D2558EA5E260186A55762AF7DD4E684FA0C01480B3B75F80", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("RBXEventTrackerV2", "CreateDate=5/10/2023 4:23:14 PM&rbxid=4592454965&browserid=170545083760", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("RBXSource", "rbx_acquisition_time=5/29/2023 4:17:19 PM&rbx_acquisition_referrer=&rbx_medium=Direct&rbx_source=&rbx_campaign=&rbx_adgroup=&rbx_keyword=&rbx_matchtype=&rbx_send_info=1", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("_ga", "GA1.1.136233950.1682654122", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("_ga_BK4ZY0C59K", "GS1.1.1685574520.5.1.1685574976.0.0.0", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("rbx-ip2", "", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("RBXSessionTracker", "sessionid=5fef1af7-98dc-4ff0-94d6-4afb181d389a", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("__utma", "200924205.136233950.1682654122.1685765638.1686423115.34", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("__utmb", "200924205.0.10.1686423115", "/", ".roblox.com")))
+$session.Cookies.Add((New-Object System.Net.Cookie("__utmc", "200924205", "/", ".roblox.com")))
+Invoke-WebRequest -UseBasicParsing -Uri "https://www.roblox.com/my/avatar" `
+-WebSession $session `
+-Headers @{
+"authority"="www.roblox.com"
+  "method"="GET"
+  "path"="/my/avatar"
+  "scheme"="https"
+  "accept"="text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+  "accept-encoding"="gzip, deflate, br"
+  "accept-language"="en-US,en;q=0.9"
+  "cache-control"="max-age=0"
+  "referer"="https://www.roblox.com/home"
+  "sec-ch-ua"="`"Not.A/Brand`";v=`"8`", `"Chromium`";v=`"114`", `"Google Chrome`";v=`"114`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="document"
+  "sec-fetch-mode"="navigate"
+  "sec-fetch-site"="same-origin"
+  "sec-fetch-user"="?1"
+  "upgrade-insecure-requests"="1"
+}
